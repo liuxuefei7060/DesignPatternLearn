@@ -1,16 +1,15 @@
-package burning.patternsingleton;
-
+package com.viewhigh.example.easydp.dpcreate.singleton;
 
 /**
  * 枚举方式
  */
-public enum SingletonDemo4 {
+public enum EnumSingleton {
 
     INSTANCE;
 
     private int mCurrentInstanceNum = 0;
 
-    SingletonDemo4() {
+    EnumSingleton() {
         mCurrentInstanceNum++;
     }
 
