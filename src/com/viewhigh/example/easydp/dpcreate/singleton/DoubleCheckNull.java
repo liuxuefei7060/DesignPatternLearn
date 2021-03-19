@@ -1,5 +1,7 @@
 package com.viewhigh.example.easydp.dpcreate.singleton;
 
+import java.io.ObjectStreamException;
+
 /**
  * 懒汉模式实现，在需要的实例的时候才创建，节省内存
  */
@@ -36,5 +38,9 @@ public class DoubleCheckNull {
 
     public void say() {
 
+    }
+
+    private Object readResolve() throws ObjectStreamException {
+        return sInstance;
     }
 }

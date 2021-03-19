@@ -34,7 +34,7 @@ public class EHanSingleton {
     }
 
     public void say() {
-        System.out.print("我是一个 恶汉 " + sCurrentInstanceNum + "   ");
+        System.out.print("我是一个 饿汉 " + sCurrentInstanceNum + "   ");
     }
 
 

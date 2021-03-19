@@ -7,13 +7,11 @@ public enum EnumSingleton {
 
     INSTANCE;
 
-    private int mCurrentInstanceNum = 0;
-
     EnumSingleton() {
-        mCurrentInstanceNum++;
+
     }
 
-    public int getCurrentInstanceNum() {
-        return mCurrentInstanceNum;
+    public void say() {
+
     }
 }
